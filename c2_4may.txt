@@ -1,0 +1,80 @@
+1.How to compile a java file?
+Ans.	Step 1:Write a program on the notepad and save it with .java (for example, Filename.java) extension.
+	Step 2:Open Command Prompt.
+	Step 3:Set the directory in which the .java file is saved. 
+	Step 4:Use the javac Filename.java command to compile the Java program. It generates a .class file in the same folder. It also shows an error if any.
+	Step 5:Use the java Filename command to run the Java program:
+
+
+2.How to run a class file?
+Ans.	Step 1:To compile your .java files, open Command Prompt.
+	Step 2:Navigate to the folder your java file is at.
+	Step 3:To compile, type javac <javaFileName>
+	Step 4:After hitting enter, .class files will appear in the same folder for each .java file.
+	Step 5:To run the class file, it must have a main method,java <classname>
+	Step 6:The result will be displayed in the Command Prompt.
+
+
+3.How to debug a java file?
+Ans.	Java program can be debugged simply by right clicking on the Java class file. Select Debug As → Java Application or use the shortcut Alt + Shift + D, J instead.
+
+4.How to set classpath?
+Ans.	Set the CLASSPATH in JAVA in Windows:
+	(i)Command Prompt:
+		set PATH=.;C:\Program Files\Java\JDK1.6.20\bin
+	(ii)GUI:
+	Step 1. Select Start
+	Step 2. Go to the Control Panel
+	Step 3. Select System and Security
+	Step 4. Select Advanced System settings
+	Step 5. Click on Environment Variables
+	Step 6. Click on New under System Variables
+	Step 7. Add CLASSPATH as variable name and path of files as a variable value.
+	Step 8. Select OK.
+
+	Set the CLASSPATH in Eclipse:
+	Step 1:In Eclipse, go to Window > Preferences > Java > Build Path > Classpath Variables.
+	Step 2:Click New, enter the following information and click OK.
+      		 Name: J2EE_JAR
+      		 Path: The path to the JAR file of your Java EE implementation. F
+	Step 3:Click New, enter the following information and click OK.
+       		Name: JAVAMAIL_HOME
+       		Path: The folder that contains mail.jar and activation.jar files for your Java EE implementation.
+	Step 4:Click OK to save the preferences.
+
+5.How to view current classpath?
+Ans.	Step 1:Go to Advanced system settings in the control apnel.
+    	Step 2:Then goto Advanced tab and click on Environment Variables.
+   	Step 3:In System Variable, there is available current path.
+
+
+6.How to set destination of the class file?
+Ans.	Set the destination of .class file we use -d option while compiling the ” .java” file, as shown below:
+		javac filename.java -d "path to store the .class file"
+	For Example: 
+		Source : Demo.java file in "/home/nishita/" directory
+		Destination :"/home/nishita/folder" directory
+		Command : javac Demo.java -d "/home/nishita/folder"
+
+7.How to run a compiled class file?
+Ans.	A class file can be run by typing "java filename" in command prompt.
+
+8.How to check version of java running on your system?
+Ans.	By typing "java -version" command in cmd.
+
+9.How to set classpath when class files are in .jar file?
+Ans.	(i)Setting classpath as a command line:
+		Add single jar file in classpath
+			$ set CLASSPATH=.;C:\dependency\framework.jar
+		Add multiple classes to classpath
+			$ set CLASSPATH=C:\dependency\*;C:\location
+		
+	(ii)Setting classpath as the Environment variable:
+		To set CLASSPATH environment variable, find the location of user environment variables in your machine and add all paths where Jar files are stored.
+			1.From the desktop, right click the Computer icon.
+			2.Choose Properties from the context menu.
+			3.Click the Advanced system settings link.
+			4.Click Environment Variables. In the section System Variables, find the CLASSPATH environment variable and select it. Click Edit. If the CLASSPATH environment variable does not exist, click New.
+			5.Add all folders separated with separator. Click Ok.Close all remaining windows by clicking OK.
+
+
